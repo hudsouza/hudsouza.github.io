@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head>
+<html lang="en">
+  <head></head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   <link rel="stylesheet" href="css/style.css"/>
   <meta name="theme-color" content="#FFE8E9"/>
-  <title>Hudson Souza - Visual, Motion and Frontend Designer</title>
-</head>
+  <title>Hudson Souza - visual, motion and front-end designer</title>
+</html>
 <body>
   <section class="cover">
     <div class="intro"><img src="img/h.svg" alt="H"/>
       <div>
-        <p>Hello! </p>
-        <p>My name's Hudson and I'm a designer.</p>
+        <h1>Hello! </h1>
+        <h1>My name's Hudson and I'm a designer.</h1>
         <button>Tell me more!</button>
       </div>
     </div>
   </section>
+  <section class="work">
+    <h2>This os some of the things I did</h2>
+  </section>
+  <div id="bm"></div>
+  <script type="text/javascript" src="bodymovin.js"></script>
+  <script>
+    var anim;
+    var animData = {
+        container: document.getElementById('bm'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        autoloadSegments: true,
+        rendererSettings: {
+            progressiveLoad:false
+        },
+        path: 'data.json'
+    };
+    anim = bodymovin.loadAnimation(animData);
+  </script>
 </body>
