@@ -16,19 +16,3 @@ body
                 button Tell me more!
     section.work
         h2 This os some of the things I did
-    div#bm(style="max-width: 410px")
-    script(type="text/javascript", src="bodymovin.js")
-    script.
-        var anim;
-        var animData = {
-            container: document.getElementById('bm'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            autoloadSegments: true,
-            rendererSettings: {
-                progressiveLoad:false
-            },
-            path: 'data.json'
-        };
-        anim = bodymovin.loadAnimation(animData);
