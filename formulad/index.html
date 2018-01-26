@@ -4,12 +4,64 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Formula D 2018</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Classificação Atual</h1>
-	</header>
-	
+	<div id="app">
+		<header>
+			<h1>Classificação</h1>
+		</header>
+		<div class="players">
+			<div class="card">
+				<div class="avatar">
+					<img src="img/brice.jpg" alt="">
+				</div>
+				<h2>Brice Cremer</h2>
+				<p>Monaco: 6 pontos</p>
+				<p>Interlagos: 10 pontos</p>
+				<p>Total: 16 pontos</p>
+			</div>
+			<div class="card">
+				<div class="avatar">
+					<img src="img/bruno.jpg" alt="">
+				</div>
+				<h2>Bruno Sanches</h2>
+				<p>Monaco: 6 pontos</p>
+				<p>Interlagos: 10 pontos</p>
+				<p>Total: 16 pontos</p>
+			</div>
+			<div class="card">
+				<div class="avatar">
+					<img src="img/hudson.jpg" alt="">
+				</div>
+				<h2>Hudson Souza</h2>
+				<p>Monaco: 6 pontos</p>
+				<p>Interlagos: 10 pontos</p>
+				<p>Total: 16 pontos</p>
+			</div>
+			<div class="card">
+				<div class="avatar">
+					<img src="img/matheus.jpg" alt="">
+				</div>
+				<h2>Matheus Steck</h2>
+				<p>Monaco: 6 pontos</p>
+				<p>Interlagos: 10 pontos</p>
+				<p>Total: 16 pontos</p>
+			</div>
+		</div>
+		<h3>
+			Líder atual: Olav
+		</h3>
+	</div>
+<script src="https://unpkg.com/moonjs"></script>
+<script>
+	const app1 = new Moon({
+		el: "#app",
+		data: {
+			msg: "Hello Moon!"
+		}
+	});
+</script>
 </body>
 </html>
