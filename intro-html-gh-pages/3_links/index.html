@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|PT+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>HTML + CSS 101</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/scroll.js"></script>
+</head>
+<body>
+	<div class="lock-scroll lock"></div>
+	<main>
+		<section>
+			<a href="javascript:" title='2_html' class="prev">Parte 2</a>
+			<div class="content">
+				<h1>Hyperlinks</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>A linguagem tem "Hypertext" no nome, então essa é uma parte importante de saber: como conectar páginas, arquivos, scripts, imagens, etc...</p>
+				<p>Existem alguns tipos diferentes de links que podem ser colocados dentro de um HTML, cada um com sua função.</p>
+
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Para outra página</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>O tipo mais básico de link são aqueles inseridos em menus e no meio dos textos, que direcionam para outra página. Para criar esse link, é necessário usar o atributo <em>href</em> na tag <span class="tag">&lt;a></span>. Esse atributo também vale para outras tags, como <span class="tag">&lt;link></span></p>
+				<code>
+					<span class="tag">&lt;a</span> <span class="attribute">href="</span><span class="value">index.html</span><span class="attribute">"</span><span class="tag">></span> index <span class="tag">&lt;/a></span>
+				</code>
+				<code>
+					<span class="tag">&lt;link</span> <span class="attribute">href="</span><span class="value">style.css</span><span class="attribute">"</span><span class="tag">></span>
+				</code>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Relativo vs Absoluto</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>
+				O valor do atributo <em>href</em> pode ser indicado de 2 maneiras: link relativo ou absoluto.
+				</p>
+				<br>
+				<p>
+					<em>Relativo</em>: Refere-se a um outro arquivo que está dentro do mesmo domínio. Se o arquivo mudar de pasta, ele perde o link.
+				</p>
+				<code>
+					<span class="tag">&lt;a</span> <span class="attribute">href="</span><span class="value">index.html</span><span class="attribute">"</span><span class="tag">></span> index <span class="tag">&lt;/a></span>
+				</code>
+
+				<br>
+				<p>
+					<em>Absoluto</em>: Refere-se a um arquivo que pode estar em qualquer lugar da web.
+				</p>
+				<code>
+					<span class="tag">&lt;a</span> <span class="attribute">href="</span><span class="value">http://movile.com/index.html</span><span class="attribute">"</span><span class="tag">></span> index <span class="tag">&lt;/a></span>
+				</code>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>E-mail</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>
+					Alguns sites usam um tipo especial de link para direcionar o usuário para eu cliente de e-mail, sem que ele precise copiar e colar o endereço, colocando o valor <em>mailto</em>.
+				</p>
+				<code>
+					<span class="tag">&lt;a</span> <span class="attribute">href="</span><span class="value">mailto:matiazzo@movile.com</span><span class="attribute">"</span><span class="tag">></span> E-mail <span class="tag">&lt;/a></span>
+				</code>
+
+				<br>
+				<p>
+					<em>Problema</em>: Essa função direciona para clientes de e-mail, ou seja, em um computador vai abrir o seu Outlook (windows) ou Mail (mac) e esses programas nem sempre estão configurados para uso.
+				</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Nova aba</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>
+					Provavelmente já viram links que carregam na mesma aba que você está navegando e outros que abrem uma aba nova com o endereço. Por padrão, os links abrem na mesma aba, mas isso pode ser alterado, indicando o valor <em>_blank</em> para o atributo <em>target</em> para o browser.
+				</p>
+				<code>
+					<span class="tag">&lt;a</span> <span class="attribute">href="</span><span class="value">index.html</span><span class="attribute">"</span> <span class="attribute">target="</span><span class="value">_blank</span><span class="attribute">"</span><span class="tag">></span> E-mail <span class="tag">&lt;/a></span>
+				</code>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>âncora: link na mesma página</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>
+					Os links que direcionam para um seção da mesma página são chamados de <em>âncora</em>. São muito utilizados em LP de página única para scrollar até o item desejado. Para fazer esse link basta por o <em>#id</em> do elemento referência no valor.
+				</p>
+				<code>
+					<span class="tag">&lt;a</span> <span class="attribute">href="</span><span class="value">#features</span><span class="attribute">"</span><span class="attribute">"</span><span class="tag">></span> Features <span class="tag">&lt;/a></span>
+					<br>
+					<span class="tag">&lt;section</span> <span class="attribute">id="</span><span class="value">features</span><span class="attribute">"</span><span class="attribute">"</span><span class="tag">></span> ... <span class="tag">&lt;/section></span>
+				</code>
+				<p>
+					Com isso, o browser vai alterar a altura da página até que a section features esteja no topo.
+				</p>
+				<p>
+					<span class="error">&nbsp; Esse é um dos motivos pra não repetir um ID na página. &nbsp;</span>
+				</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+			<a href="javascript:" title='4_css' class="next">Parte 4</a>
+		</section>
+
+	</main>
+</body>
+</html>

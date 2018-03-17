@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+}
+
+.top {
+	background-image: url(http://fillmurray.com/500/500);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 500px;
+	padding: 30px;
+	width: 600px;
+	margin: 50px auto;
+}
+
+h1 {
+	font-size: 90px;
+	color: white;
+	font-family: arial, helvetica, sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+	color: white;
+	font-family: georgia, "times new roman", serif;
+	font-style: italic;
+	font-weight: normal;
+}
+

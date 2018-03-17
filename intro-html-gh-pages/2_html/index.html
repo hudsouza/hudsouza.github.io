@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|PT+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>HTML + CSS 101</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/scroll.js"></script>
+	<script>
+		function play(){
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+	</script>
+</head>
+<body>
+	<div class="lock-scroll lock"></div>
+	<main>
+		<section>
+			<a href="javascript:" title='1_html' class="prev">Parte 1</a>
+			<div class="content">
+				<h1>Elementos block</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Elementos <em>block</em> ocupam toda a largura disponível da tela e se empilham um em cima do outro conforme são inseridos, como os parágrafos dessa apresentação. Elementos block podem ser parágrafos, divs, sections, navs, headers, articles e outros.</p>
+				<p>Elementos block também podem estar inseridos dentro um do outro:</p>
+				<br>
+				<div style="border: 1px solid #000; padding: 10px; width: 100%;">
+					elemento block
+					<div style="border: 1px solid #000; padding: 10px; width: 100%;">elemento block
+						<div style="border: 1px solid #000; padding: 10px; width: 100%;">elemento block</div>
+					</div>
+				</div>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Elementos inline</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Elementos <em>inline</em> ocupam, na página, o espaço de seus conteúdos. Ao contrário dos <em>block</em>, que ocupam a largura toda, os inline vão se alinhando um ao lado do outro. Eles podem estar tanto um dentro do outro quanto dentro de um elemento block.
+				</p>
+				<p>É comum usarmos elementos inline para dar destaque a algumas palavras, com sublinhados, negritos, itálicos ou com cores diferentes.</p>
+				<br>
+				<div style="border: 1px solid #000; padding: 10px; width: 100%;"><span>Elemento inline que tem um <span style="color: red;">elemento inline</span> dentro dele e os dois estão dentro de um elemento block que agrupa os dois.</span></div>
+				
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Semântica</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<p>Semântica, no HTML, é a prática de dar significado aos elementos da página. Dos benefícios existentes ao trabalhar seu código de modo semântico, os principais são: possibilitar que devices leiam seu código para, por exemplo, mostrarem a prévia de um texto num feed ou permitir que softwares de acessibilidade leiam, literalmente, sua página para deficientes visuais; e facilitar a leitura do próprio código por outros desenvolvedores (evitando o retrabalho).</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>&lt;div> e &lt;span></h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p><em>div</em> e <em>span</em> são dois elementos essenciais para qualquer código HTML. Mas eles não tem nenhum valor semântico e servem como containers para outros elementos.</p>
+				<p>Por exemplo, <em>parágrafos</em> são colocado dentro da tag <span class="tag">&lt;p></span> e títulos são colocados nas tags <span class="tag">&lt;h1></span> até <span class="tag">&lt;h6></span> por serem <em>headings</em>.</p>
+				<p><em>div</em> é um elemento block e <em>span</em>, inline.</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Classes e ids</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>É normal ver divs e spans com atributos de classe e id. Esses atributos servem pra "nomear" esses elementos para que eles possam ser alvos de links e estilos.</p>
+				<br>
+				<p><em>Classes</em>: A mesma classe pode ser aplicada em mais de um elemento.</p>
+				<code>
+					<span class="tag">&lt;a</span>
+					<span class="attribute">class="</span><span class="value">menu</span><span class="attribute">"</span><span class="tag">&gt;</span> Movile <span class="tag">&lt;/a&gt;</span>
+					<br>
+					<span class="tag">&lt;span</span>
+					<span class="attribute">class="</span><span class="value">menu</span><span class="attribute">"</span><span class="tag">&gt;</span> Movile <span class="tag">&lt;/span&gt;</span>
+				</code>
+				<p>Tanto a tag <span class="tag">&lt;a></span> quanto a <span class="tag">&lt;span></span> tem a classe <em>menu</em></p>
+				<br>
+				<p><em>Ids</em>: também podem ser usados para estilizar, mas apenas 1 elemento.</p>
+				<code>
+					<span class="tag">&lt;div</span>
+					<span class="attribute">id="</span><span class="value">intro</span><span class="attribute">"</span><span class="tag">&gt;</span> Introdução da página <span class="tag">&lt;/div&gt;</span>
+					<br>
+					<span class="tag">&lt;div</span>
+					<span class="attribute">id="</span><span class="value">about</span><span class="attribute">"</span><span class="tag">&gt;</span> Sobre o site <span class="tag">&lt;/div&gt;</span>
+					<br>
+					<span class="tag">&lt;div</span>
+					<span class="error">id="intro"</span><span class="tag">&gt;</span> Outro conteúdo <span class="tag">&lt;/div&gt;</span>
+				</code>
+				<p>Posso repetir um id? <em class="gif-no-trigger" onclick="play()" style="cursor: pointer;">Clique aqui pra saber</em>. IDs são como serial number de produtos, são usados para identificar um elemento <em>único</em> na página.</p>
+				<audio id="audio" src="no.mp3" ></audio>
+
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>nomeando classes e ids</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Uma das metodologias mais disseminadas diz que as classes e os ids devem ser nomeados em relação à função que os elementos cumprem, e não à sua aparência. Ou seja, se formos criar uma <span class="tag">div</span> com fundo azul para as redes sociais, escreveríamos:</p>
+				<code>
+					<span class="tag">&lt;div</span>
+					<span class="attribute">class="</span><span class="value">social</span><span class="attribute">"</span><span class="tag">&gt;</span> facebook | twitter <span class="tag">&lt;/div&gt;</span>
+				</code>
+				<p>e não:</p>
+				<code>
+					<span class="tag">&lt;div</span>
+					<span class="attribute">class="</span><span class="value">fundo-azul</span><span class="attribute">"</span><span class="tag">&gt;</span> facebook | twitter <span class="tag">&lt;/div&gt;</span>
+				</code>
+				<p>Assim, se essa <span class="tag">div</span> mudar de fundo azul pra vermelho no futuro, o nome "fundo-azul" não fará mais sentido mas o "social" sim.</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Estruturando</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Por muito tempo o único jeito de contruir páginas era com <span class="tag">&lt;div></span> e isso ainda é possível, porém, é semânticamente prejudicial.</p>
+				<p>Com a atualização do HTML 5 foram criados alguns novos elementos block, que têm a mesma função de uma div, mas são mais semânticos.</p>
+				<br>
+				<p><em>Header</em>: usado para topos de páginas ou seções.</p>
+				<p><em>Nav</em>: identifica navegações principais (menu).</p>
+				<p><em>Article</em>: conteúdo independente, que pode ser usado fora da página. Post de blog, notícia, conteúdos em geral.</p>
+				<p><em>Section</em>: agrupa conteúdos com mesmo tema</p>
+				<p><em>Aside</em>: para sidebars ou curtas explicações (autor do texto)</p>
+				<p><em>Footer</em>: autoexplicativo</p>
+
+			</p>
+		</div>
+		<div class="up"><span>↑</span></div>
+		<div class="down"><span>↑</span></div>
+		<a href="javascript:" title='3_links' class="next">Parte 3</a>
+	</section>
+
+</main>
+</body>
+</html>

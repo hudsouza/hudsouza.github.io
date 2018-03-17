@@ -1,0 +1,15 @@
+/* cores
+
+vermelho : #E22A0F;
+verde : #9BD100;
+azul: #03A9F4;
+cinza claro: #eaeaea;
+cinza escuro: #616161;
+
+
+*/
+
+html, body {
+	margin: 0;
+	background-color: wheat;
+}

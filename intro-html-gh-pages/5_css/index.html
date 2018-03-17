@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|PT+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>HTML + CSS 101</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/scroll.js"></script>
+</head>
+<body>
+	<div class="lock-scroll lock"></div>
+	<main>
+		<section class="first">
+		<a href="javascript:" title='4_css' class="prev">Parte 4</a>
+			<div class="content">
+				<h1>A cascata</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Saber como o CSS é renderizado na página é muito importante pra saber como escrever seu código. A folha de estilo funciona como uma sequência de instruções e por isso a ordem de como os seletores são declarados faz toda a diferença.</p>
+				<code>
+					<span class="selector">h1 {</span><br>
+					<span class="property">font-size</span>: 
+					<span class="value">20px</span>;<br>
+					<span class="selector">}</span>
+					<br><br>
+					<span class="selector">h1 {</span><br>
+					<span class="property">font-size</span>: 
+					<span class="value">24px</span>;<br>
+					<span class="selector">}</span>
+				</code>
+				<p>O tamanho da fonte desse <em>h1</em> vai ser de <em>24px</em> porque o último valor declarado sobrepõe todos os anteriores.</p>
+
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Especificidade</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>A primeira regra para atribuir valores a propriedades é a sequência do código, mas ela pode ser sobreposta se o primeiro seletor for mais específico que o próximo. Podemos calcular a especificade com os seguintes valores:</p>
+				<br>
+				<p>
+					<em>Elemento</em>: 0-0-1
+				</p>
+				<p>
+					<em>Classe</em>: 0-1-0
+				</p>
+				<p>
+					<em>ID</em>: 1-0-0
+				</p>
+				
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Na prática</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<code>
+					<span class="selector">.titulo {</span><br>
+					<span class="property">font-size</span>: 
+					<span class="value">20px</span>;<br>
+					<span class="selector">}</span>
+					<br>
+					/* Especificidade: 0-1-0 */
+					<br><br>
+					<span class="selector">h1 {</span><br>
+					<span class="property">font-size</span>: 
+					<span class="value">24px</span>;<br>
+					<span class="selector">}</span>
+					<br>
+					/* Especificidade: 0-0-1 */
+				</code>
+				<p>Apesar do segundo valor declarado ser de 24px, o valor que será atribuido será de 20px porque o seletor classe é mais específico que o seletor de elemento.</p>
+				
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>parent & child</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+			<p>Voltando um pouco para o HTML, quando estamos inserindo os elementos, muitos deles ficam dentro de outros elementos. Essa relação é chamada de <em>parent</em> e <em>child</em></p>
+				<code>
+					<span class="tag">&lt;div></span><br>
+					<span class="tag">&lt;p></span> ... <span class="tag">&lt;/p></span><br>
+					<span class="tag">&lt;/div></span>
+
+				</code>
+				<p>O elemento &lt;p> é <em>filho</em>  (child) da div, que é elemento <em>pai</em> (parent)</p>
+				
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>pra que serve?</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+			<p>Podemos usar a relação de child e parent pra especificarmos o que vai ser estilizado.</p>
+				<code>
+					<span class="selector">p {</span><br>
+					<span class="property">line-height</span>: 
+					<span class="value">1.5</span>;<br>
+					<span class="selector">}</span>
+					<br><br>
+					<span class="selector">article p {</span><br>
+					<span class="property">line-height</span>: 
+					<span class="value">1.8</span>;<br>
+					<span class="selector">}</span>
+				</code>
+				<p>Nesse código, todos os parágrafos vão ter a entrelinha com altura 1.5, exceto as que estiverem dentro de um <span class="tag">&lt;article></span>, que terão entre linha 1.8.</p>
+				
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+			<a href="javascript:" title='6_work' class="next">Parte 6</a>
+		</section>
+
+	</main>
+
+</body>
+</html>
