@@ -36,6 +36,15 @@ h2 {
 	font-size: 1.6rem;
 	font-weight: bold
 }
+p {
+	font-size: 1.2rem;
+	margin-bottom: 1rem
+}
+p:last-child {
+	border-top: 1px solid #eee;
+	padding-top: 16px;
+	font-weight: bold;
+}
 h3 {
 	background: #8e24aa;
 	color: white;
@@ -46,15 +55,6 @@ h3 {
 	padding: 30px;
 	font-weight: normal;
 	text-align: center
-}
-p {
-	font-size: 1.2rem;
-	margin-bottom: 1rem
-}
-p:last-child {
-	border-top: 1px solid #eee;
-	padding-top: 16px;
-	font-weight: bold;
 }
 .players {
 	width: 100%;
@@ -72,6 +72,35 @@ p:last-child {
 	border-radius: 4px;
 	position: relative;
 }
+.players .card:first-child {
+	border: 1px solid #8e24aa;
+	position: relative;
+}
+.players .card:first-child img {
+	border: 2px solid #8e24aa;
+}
+.players .card:after {
+	content: '';
+	position: absolute;
+	padding: 5px 10px;
+	top: 10px;
+	left: 10px;
+	background: #8e24aa;
+	color: white;
+	border-radius: 100px
+}
+.players .card:first-child:after {
+	content: 'Líder';
+}
+.players .card:nth-child(2):after {
+	content: '2º';
+}
+.players .card:nth-child(3):after {
+	content: '3º';
+}
+.players .card:nth-child(4):after {
+	content: '4º';
+}
 .avatar img {
 	position: absolute;
 	top: -60px;
@@ -80,4 +109,22 @@ p:last-child {
 	width: 120px;
 	display: block;
 	border-radius: 100%;
+}
+@media (max-width: 1120px) {
+	.players {
+		flex-wrap: wrap;
+	}
+	.players .card {
+		width: calc(50% - 20px);
+		margin-bottom: 100px;
+	}
+}
+@media (max-width: 650px) {
+	.players .card {
+		width: calc(100% - 20px);
+		margin-bottom: 100px;
+	}
+	h1 {
+		font-size: 1.6rem;
+	}
 }
