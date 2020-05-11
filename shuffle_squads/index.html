@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shuffle Squads CX</title>
+	<style>
+		body {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: normal;
+		  font-size: 24px;
+		  line-height: 1.5;
+		  text-align: center;
+		}
+
+		ul {
+		  padding: 40px;
+		  width: 320px;
+		  margin: 0 auto;
+		  list-style: none;
+		}
+		ul li {
+		  color: #00b4ff;
+		  background-color: #ffffff;
+          box-shadow: 0 6px 16px 0 rgba(0,0,0,0.16);
+          border-radius: 4px;
+          padding: 16px 32px;
+          margin-bottom: 16px;
+		  border-radius: 5px;
+		}
+		ul li + li {
+		  margin-top: 8px;
+		}
+
+		button {
+		  font-size: 24px;
+		  color: white;
+		  width: 320px;
+		  padding: 16px 32px;
+		  box-shadow: 0 6px 16px 0 rgba(0,0,0,0.16);
+		  background-color: #00b4ff;
+		  border: none;
+		  outline: none;
+		  border-radius: 5px;
+		  cursor: pointer;
+		  transition: background-color 0.3s;
+		}
+		button:hover {
+		  background-color: #006bbb;
+		}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		$( document ).ready(function() {
+		    console.log( "ready!" );
+		    $('button').click(function() {
+				shuffleElements( $('li') );
+			});
+		});
+			
+
+		function shuffleElements($elements) {
+			var i, index1, index2, temp_val;
+
+			var count = $elements.length;
+			var $parent = $elements.parent();
+			var shuffled_array = [];
+
+
+			// populate array of indexes
+			for (i = 0; i < count; i++) {
+				shuffled_array.push(i);
+			}
+
+			// shuffle indexes
+			for (i = 0; i < count; i++) {
+				index1 = (Math.random() * count) | 0;
+				index2 = (Math.random() * count) | 0;
+
+				temp_val = shuffled_array[index1];
+				shuffled_array[index1] = shuffled_array[index2];
+				shuffled_array[index2] = temp_val;
+			}
+
+			// apply random order to elements
+			$elements.detach();
+			for (i = 0; i < count; i++) {
+				$parent.append( $elements.eq(shuffled_array[i]) );
+			}
+		}
+	</script>
+</head>
+<body>
+	<ul>
+		<li>Carreta</li>
+		<li>Mad Max</li>
+		<li>Sinergia</li>
+		<li>Shipper</li>
+		<li>TM & SB</li>
+	</ul>
+
+	<button>Sortear!</button>
+</body>
+</html>
