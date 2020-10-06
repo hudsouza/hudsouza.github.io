@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|PT+Sans" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>HTML + CSS 101</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/scroll.js"></script>
+</head>
+<body>
+	<div class="lock-scroll lock"></div>
+	<main>
+		<section class="first">
+			<div class="content">
+				<h1>HyperText Markup Language</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>O HTML dá ao conteúdo do seu site estrutura e significado definindo esse conteúdo como em cabeçalhos, parágrafos, menus, rodapés, imagens, links, etc...</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Entendendo os termos</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>De início, pode ser que você encontre termos estranhos ao estudar HTML. Mas não se preocupe, com o tempo eles se tornam familiares e tudo fica mais fácil 😊</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Elemento</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Elementos são o que definem a estrutura e conteúdo dos elementos nas páginas. Alguns dos mais usados são <em>headings</em>, <em>parágrafos</em>, <em>spans</em> e <em>divs</em>. Elementos são identificados com tags</p>
+				<code>
+					<span class="tag">&lt;a&gt;</span>
+				</code>
+
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>tags</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>O uso de &lt; &gt; ao redor do elemento define uma <em>tag</em>. Em sua maioria, tags são compostas por um par de &lt; &gt;. Um para abertura e outro para fechamento.</p>
+				<p>A abertura de tag marca o começo daquele elemento. Composta de [menor que] + [nome do elemento] + [maior que]</p>
+				<p>O fechamento de tag encerra esse mesmo elemento. É composto de [menor que] + [barra] + [nome do elemento] + [maior que]</p>
+				<p>Tudo que for escrito dentro dessas tags será o conteúdo dela, então, para criar uma tag de link (a), escreve-se:</p>
+				<code>
+					<span class="tag">&lt;a&gt;</span> html <span class="tag">&lt;/a&gt;</span>
+				</code>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>atributos</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Atributos dão informações adicionais ao elemento. Os mais comuns são:
+					<br>
+					<br><em>id</em>: Identificam um elemento;
+					<br><em>class</em>: Classificam um elemento;
+					<br><em>src</em>: Procuram a fonte (source) que vai ser embutida no elemento;
+					<br><em>href</em>: Referem-se a hyperlinks locais ou externos.
+				</p>
+				<code>
+					<span class="tag">&lt;a</span>
+					<span class="attribute">id="</span><span class="value">link</span><span class="attribute">"</span> <span class="attribute">class="</span><span class="value">menu</span><span class="attribute">" href="</span><span class="value">http://sp.senac.br</span><span class="attribute">"</span><span class="tag">&gt;</span> Senac <span class="tag">&lt;/a&gt;</span>
+					<br><br>
+					<a href="http://sp.senac.br" target="_blank">Senac</a>
+				</code>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section class="first">
+			<div class="content">
+				<h1>Estruturando o HTML</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Todos os documentos HTML precisam ter uma estrutura inicial obrigatória, que inclui as seguintes declarações e elementos:</p>
+				<code>
+					<span class="tag">&lt;!DOCTYPE html&gt;</span>, <span class="tag">&lt;html&gt;</span>, <span class="tag">&lt;head&gt;</span>, and <span class="tag">&lt;body&gt;</span>
+				</code>
+				<p>A primeira linha de todo documento HTML deve declarar o tipo de documento para que o browser saiba o que precisa ler. Se a versão for a última (HTML 5, no caso), basta &lt;!DOCTYPE html&gt;. Caso contrário, precisamos declarar a versão e depois disso, abrimos a tag &lt;html&gt;</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section class="first">
+			<div class="content">
+				<h1>&lt;head> e &lt;body></h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Dentro do &lt;html>, primeiro criamos o elemento &lt;head> (cabeça). Tudo que vai dentro dessa tag não aparece na página propriamente dita. As informações que são colocadas aqui são adicionais para a página: Título (que fica na barra do navegador); metadados, que ajudam a encontrar a página; e links de arquivos externos, como .css e .js, por exemplo.</p>
+				<p>Todo conteúdo que é visível na página está dentro do &lt;body> (corpo). Isso inclui títulos, parágrafos, tabelas, imagens, menus e outros elementos.</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>elementos<br>"Self-closing"</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Nem todas as tags precisam de encerramento. Algumas delas têm seu conteúdo apenas nos atributos (ou nem isso). As self-closing mais comuns são:</p>
+				<code>
+					Dentro do <span class="tag">&lt;head&gt;</span>
+					<br>
+					<span class="tag">&lt;meta&gt;</span>
+					<span class="tag">&lt;link&gt;</span>
+					<br><br>
+					Dentro do <span class="tag">&lt;body&gt;</span>
+					<br>
+					<span class="tag">&lt;br&gt;</span>
+					<span class="tag">&lt;img&gt;</span>
+					<span class="tag">&lt;hr&gt;</span>
+					<span class="tag">&lt;source&gt;</span>
+				</code>
+
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Estrutura básica</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section id="exemplo">
+			<div class="content">
+				<code>
+					<span class="tag">&lt;!DOCTYPE html></span>
+					<br><span class="tag">&lt;html</span> <span class="attribute">lang="</span></span><span class="value">en</span><span class="attribute">"</span><span class="tag">></span>
+					<br><span class="tag">&nbsp;&nbsp;&lt;head></span>
+					<br><span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta</span> <span class="attribute">charset="</span><span class="value">utf-8</span><span class="attribute">"</span><span class="tag">></span>
+					<br><span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;&lt;title></span>Hello World<span class="tag">&lt;/title></span>
+					<br><span class="tag">&nbsp;&nbsp;&lt;/head></span>
+					<br><span class="tag">&nbsp;&nbsp;&lt;body></span>
+					<br><span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1></span>Hello World<span class="tag">&lt;/h1></span>
+					<br><span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p></span>Primeira aula de HTML 🦄<span class="tag">&lt;/p></page>
+					<br><span class="tag">&nbsp;&nbsp;&lt;/body></span>
+					<br><span class="tag">&lt;/html></span>
+				</pre>
+			</code>
+			<a href="exemplo.html">exemplo</a>
+
+			<a href="javascript:" title='2_html' class="next">Parte 2</a>
+		</div>
+		<div class="up"><span>↑</span></div>
+		<div class="down"><span>↑</span></div>
+	</section>
+</main>
+</body>
+</html>

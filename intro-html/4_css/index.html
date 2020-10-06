@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|PT+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>HTML + CSS 101</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/scroll.js"></script>
+</head>
+<body>
+	<div class="lock-scroll lock"></div>
+	<main>
+		<section class="first">
+		<a href="javascript:" title='3_links' class="prev">Parte 3</a>
+			<div class="content">
+				<h1>Cascade Style Sheet</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Assim como no HTML, no CSS também precisamos nos familiarizar com alguns termos decorrentes. Os principais são 
+				<em>seletores</em>, 
+				<em>propriedades</em> e 
+				<em>valores</em>.</p>
+
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Seletores</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Conforme vamos adicionando elementos ao HTML, eles estão passíveis de estilização e para conseguirmos aplicar os estilos a esses elementos precisamos indicá-lo ao CSS. Seletores são, na maioria das vezes, as tags HTML como <span class="tag">&lt;p></span>, <span class="tag">&lt;h1></span>, <span class="tag">&lt;div></span> e podem indicar, também, um atributo do elemento, como <em>class</em> e <em>id</em>.</p>
+				<code>
+					<span class="selector">p {</span>
+					...
+					<span class="selector">}</span>
+				</code>
+				<p>Após os seletores, abrimos e fechamos chaves. O que está entre as chaves são as <em>propriedades</em> e seus <em>valores</em>. No exemplo acima, estamos estilizando os parágrafos da página.</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Propriedades</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Uma vez selecionado, cada elemento pode ter suas <em>propriedades</em> estilizadas. As propriedades ficam entre as chaves e são seguidas de dois-pontos. Existem inúmeras propriedades que podemos usar e mais propriedades continuam sendo criadas.</p>
+				<code>
+					<span class="selector">p {</span><br>
+					<span class="property">color</span>:
+					<span class="value">...</span>;<br>
+					<span class="property">font-size</span>:
+					<span class="value">...</span>;<br>
+					<span class="selector">}</span>
+				</code>
+				<p>Propriedades começam com dois-pontos e terminam com ponto-e-vírgula. No exemplo acima, estamos estilizando a cor e tamanho da fonte.</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Valores</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Cada propriedade CSS pode receber um tipo de valor que determina seu comportamento.</p>
+				<code>
+					<span class="selector">p {</span><br>
+					<span class="property">color</span>: 
+					<span class="value">blue</span>;<br>
+					<span class="property">font-size</span>:
+					<span class="value">18px</span>;<br>
+					<span class="selector">}</span>
+				</code>
+				<p>Os valores vão determinar que os parágrafos vão ter a cor azul e tamanhode 18px.</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+
+		<section>
+			<div class="content">
+				<h1>Class e id</h1>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+		</section>
+		<section>
+			<div class="content">
+				<p>Além de tags HTML, os atributos de classe e id também podem ser usados como seletores mais específicos.</p>
+				<code>
+					<span class="selector">#id {</span><br>
+					<span class="property">width</span>: 
+					<span class="value">900px</span>;<br>
+					<span class="property">display</span>:
+					<span class="value">block</span>;<br>
+					<span class="selector">}</span>
+					<br><br>
+					<span class="selector">.class {</span><br>
+					<span class="property">color</span>: 
+					<span class="value">yellow</span>;<br>
+					<span class="property">font-size</span>:
+					<span class="value">14px</span>;<br>
+					<span class="selector">}</span>
+				</code>
+				<p><em>IDs</em> são indicados usando uma cerquilha (ou hashtag) antes do nome e <em>classes</em> são indicadas com um ponto.</p>
+			</div>
+			<div class="up"><span>↑</span></div>
+			<div class="down"><span>↑</span></div>
+			<a href="javascript:" title='5_css' class="next">Parte 5</a>
+		</section>
+
+	</main>
+</body>
+</html>
