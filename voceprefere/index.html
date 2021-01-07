@@ -15,30 +15,27 @@
 <body onload="chooseOption()">
 	<main>
 		<header>
-			<h1>Você prefere:</h1>
-			<h2>Escolha qual desses você acha menos pior</h2>
+			<h1>O QUE VOCÊ PREFERE?</h1>
 		</header>
 		<section>
-			<div class="card-border">
+			<div class="optionA">
 				<div class="card" id="card1_base">
 					<p id="card1_txt">Carregar uma tampa de bueiro em todo lugar que for</p>
 				</div>
-				<span>Opção A</span>
 			</div>
 			<div class="ou">
-				<h3>OU</h3>
+				<h3>ou</h3>
 			</div>
-			<div class="card-border">
+			<div class="optionB">
 				<div class="card" id="card2_base">
 					<p id="card2_txt">Chamar uma estranha de "mãe" uma vez por dia</p>
 				</div>
-				<span>Opção B</span>
 			</div>
 		</section>
-		<div class="buttons">
-			<a id="refresh" href="#" onclick="chooseOption()">OUTRAS OPÇÕES</a>
+		<footer class="buttons">
+			<button id="refresh" href="#" onclick="chooseOption()">OUTRAS OPÇÕES</button>
 			<a id="zap" href="#" onclick="zap()"></a>
-		</div>
+		</footer>
 	</main>
 </body>
 </html>

@@ -4,7 +4,7 @@ function chooseOption() {
 	'Não conseguir respirar pelo nariz',
 	'Só pode ficar parado ou correr a toda velocidade',
 	'Peidar toda vez que beijar alguém',
-	'Mandar mensagem de "AJUDA" pra sua mãe e sumir por um mês',
+	'Mandar mensagem de "SOCORRO" pra sua mãe e sumir por um mês',
 	'Lutar com um avestruz até a morte',
 	'Sempre ter voz de quem inalou gás hélio',
 	'Sempre sentir que você não dormiu na última noite',
