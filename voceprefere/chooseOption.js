@@ -75,7 +75,8 @@ function chooseOption() {
 	'Por a mão num liquidificador ligado',
 	'Falar como foi o sexo com a mãe do parceiro sempre que terminar de transar',
 	'Fazer cirurgia, mas a anestesia te paralisa e não deixa falar apesar de você ainda estar sentindo tudo',
-	'Sempre fazer um comentário racista no aniversário dos seus amigos'
+	'Sempre fazer um comentário racista no aniversário dos seus amigos',
+	'Treinar com a última pessoa que vc conversou até conseguir fazer um fist fucking nela'
 	];
 	var op1 = Math.floor(option.length*Math.random());
 	var op2 = Math.floor(option.length*Math.random());
