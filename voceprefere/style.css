@@ -187,16 +187,17 @@ a:hover {
 	a {
 		border-radius: 0;
 		font-size: 16px;
-		padding: 12px 0;
+		padding: 16px 0 12px;
 		margin: 0;
 	}
 	#refresh {
 		width: 80%;
+		height: 60px;
 	}
 	#zap {
 		color: green;
 		width: 20%;
-		height: 48px;
+		height: 60px;
 		background-image: url(https://i.pinimg.com/736x/93/b2/65/93b265c795140247db600ac92e58746a.jpg);
 		background-size: auto 100%;
 		background-position: center;
