@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	transition: all ease 0.3s;
+}
+body {
+	background: #f9f9f9;
+}
+header {
+	background: #ee1820;
+	padding: 10px 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+header img {
+	width: 100px;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 20px;
+}
+.menu div {
+	height: 2px;
+	width: 32px;
+	background: white;
+}
+main {
+	margin: 0 auto;
+	margin-top: 90px;
+	max-width: 600px;
+}
+h1 {
+	margin: 24px;
+	text-align: center;
+}
+.movie {
+	position: relative;
+	width: calc(100% - 32px);
+	margin-left: 16px;
+	margin-bottom: 40px;
+}
+.cover {
+	overflow: hidden;
+	/*height: 210px;*/
+	/*box-shadow: 0px 12px 24px rgba(0,0,0,0.4);*/
+}
+.cover img {
+	width: 100%;
+}
+.blur {
+	width: 88%;
+	height: 50%;
+	position: absolute;
+	top: 54%;
+	left: 6%;
+	filter: blur(10px);
+	z-index: -1;
+}
+h3 {
+	color: #414141;
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+.watched .cover, .watched .blur {
+	filter: grayscale(100);
+	opacity: 0.5;
+}
+.watched .blur {
+	display: none;
+}
+.watched:after {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	content: '';
+	background: url(https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-512.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 32px 40px;
+	background-color: white;
+	width: 32px;
+	height: 32px;
+	color: white;
+	border-radius: 32px;
+}
