@@ -4,67 +4,65 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet' href='style.css')
-    script(src='umbrella.js')
-    script(src='effects.js')
     title Cronograma Filmes Marvel
   body(onLoad='Watched()')
     header
       img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/800px-MarvelLogo.svg.png' alt='')
-      //- .menu
-      //-   div
-      //-   div
-      //-   div
+      h2
+        | Faltam 
+        span#tempo 48 horas e 2 minutos
     main
-      h1 Nossa listinha 🥰
-      mixin Movie(id, title, cover)
-        .movie(id=id)
+      h1 Nossa listinha
+      mixin Movie(id, time, title, cover)
+        .movie(id=id, data-time=time)
           h3= title
           .cover
             img(src=cover)
           img.blur(src=cover)
-      +Movie(1, 'Capitão América O Primeiro Vingador',
+      +Movie(1, 124, 'Capitão América O Primeiro Vingador',
       'https://cdn.mos.cms.futurecdn.net/rNqRoby4d3rr9QCnigVq2B-1200-80.jpeg')
-      +Movie(2, 'Capitã Marvel',
+      +Movie(2, 123, 'Capitã Marvel',
       'https://spacecortezwrites.files.wordpress.com/2019/03/captainmarvel.png')
-      +Movie(3, 'Homem de Ferro',
+      +Movie(3, 126, 'Homem de Ferro',
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfDbspInp0dTrG8p2t_vi66JE63YX8OY3Ug&usqp=CAU')
-      +Movie(4, 'Homem de Ferro 2',
+      +Movie(4, 124, 'Homem de Ferro 2',
       'https://www.wallpaperflare.com/static/933/464/845/movies-iron-man-2-iron-man-tony-stark-wallpaper.jpg')
-      +Movie(5, 'Thor',
+      +Movie(5, 115, 'Thor',
       'https://wallpaperaccess.com/full/645142.jpg')
-      +Movie(6, 'Os Vingadores',
+      +Movie(6, 143, 'Os Vingadores',
       'https://wallup.net/wp-content/uploads/2019/07/24/869891-avengers-age-ultron-marvel-comics-superhero-ageultron-action-adventure-fighting-warrior-poster-748x421.jpg')
-      +Movie(7, 'Homem de Ferro 3',
+      +Movie(7, 130, 'Homem de Ferro 3',
       'https://mewallpaper.com/thumbnail/movies/1883-iron-man-3-official-movie-poster-free-hq-image.jpg')
-      +Movie(8, 'Thor: Mundo Sombrio',
+      +Movie(8, 112, 'Thor: Mundo Sombrio',
       'https://wallpapercave.com/wp/wp3079593.jpg')
-      +Movie(9, 'Capitão América: Soldado Invernal',
+      +Movie(9, 136, 'Capitão América: Soldado Invernal',
       'https://c4.wallpaperflare.com/wallpaper/183/764/44/captain-america-the-winter-soldier-captain-america-nick-fury-black-widow-wallpaper-preview.jpg')
-      +Movie(10, 'Guardiões da Galáxia vol. 1',
+      +Movie(10, 121, 'Guardiões da Galáxia vol. 1',
       'https://boymeetsfilm.com/wp-content/uploads/2016/03/Guardians-of-the-Galaxy-image.jpg')
-      +Movie(11, 'Guardiões da Galáxia vol. 2',
-      'https://lh3.googleusercontent.com/proxy/SFQaOGkcnf5VGF_aSCnVPJJkzD7VFNelF5rF0lum0NGQnE9OvMul6PLk2151aCeCd-rJYU8v0PpCfOSDn--sqDvoC65NlMNOAFjjMn4oHbNcdNW7AKr9')
-      +Movie(12, 'Os Vingadores: Era de Ultron',
+      +Movie(11, 136, 'Guardiões da Galáxia vol. 2',
+      'https://images.squarespace-cdn.com/content/v1/569d58c3a12f44354e11b6a7/1524736089087-BUX6CT6GN8PLJMLUU8XF/ke17ZwdGBToddI8pDm48kMVkwzXa8oL9ycT4I9UqKogUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcHHDsrdEDiCapMyfpPyh7P_RlpsguWMf-vW-FDvbbgSEgMsUP4CuvmBy3ZZXCk-Oy/DIS_GOTG2_GA_NP_1285x720.jpg')
+      +Movie(12, 141, 'Os Vingadores: Era de Ultron',
       'https://www.wallpaperup.com/uploads/wallpapers/2016/01/05/869924/cf00ab6ad63a9cac7f850d13300f6063-700.jpg')
-      +Movie(13, 'Homem-Formiga',
+      +Movie(13, 117, 'Homem-Formiga',
       'https://cdn.entertainment-focus.com/wp-content/uploads/2015/07/antman_resized.jpg')
-      +Movie(14, 'Capitão América: Guerra Civil',
+      +Movie(14, 147, 'Capitão América: Guerra Civil',
       'https://i.pinimg.com/originals/e7/ff/01/e7ff013bf9c1ff579cd40c7b44ac7a3c.jpg')
-      +Movie(15, 'Doutor Estranho',
+      +Movie(15, 115, 'Doutor Estranho',
       'https://wallpapercave.com/wp/wp2028631.jpg')
-      +Movie(16, 'Thor: Ragnarok',
+      +Movie(16, 130, 'Thor: Ragnarok',
       'https://unofficialmoviereviews.files.wordpress.com/2017/11/thor-ragnarok-end-credits-avengers-infinity-war-870508.jpg')
-      +Movie(17, 'Homem-Aranha: De volta ao lar',
+      +Movie(17, 133, 'Homem-Aranha: De volta ao lar',
       'https://media.comicbook.com/2017/05/spider-man-homecoming-new-posters-one-shot-iron-man-994982-1280x0.jpg')
-      +Movie(18, 'Pantera Negra',
-      'https://lh3.googleusercontent.com/proxy/EPqXeYHLqWbpkl2FuXQuOyS0ONa6P4PbVoEcrh_aUf_Tb8sD9s-XzfYkWUfy1Pizrd2M4srRgG8CCtTyED6mmxI827EzPfwgRI8XZ3KYlJZMARDCP3_XASMng7XYMHf235BTJ5o5gLjdQtMCC-rAjsA')
-      +Movie(19, 'Homem-Formiga e a Vespa',
+      +Movie(18, 134, 'Pantera Negra',
+      'https://www.tysonsreporter.com/files/2019/02/blackpanther2.jpeg')
+      +Movie(19, 118, 'Homem-Formiga e a Vespa',
       'https://brieftake.com/wp-content/uploads/2018/06/Horizontal-Ant-Man-Art1.jpg')
-      +Movie(20, 'Os Vingadores: Guerra Infinita',
+      +Movie(20, 149, 'Os Vingadores: Guerra Infinita',
       'https://wallpaperaccess.com/full/95489.jpg')
-      +Movie(21, 'Os Vingadores: Ultimato',
+      +Movie(21, 181, 'Os Vingadores: Ultimato',
       'https://pbs.twimg.com/media/D2jvOdmUgAALnnx.jpg')
-      +Movie(22, 'Homem-Aranha: Longe de casa',
+      +Movie(22, 129, 'Homem-Aranha: Longe de casa',
       'https://flxt.tmsimg.com/assets/p14569140_v_h10_ag.jpg')
       h1 E agora?
-      
+  script(src='effects.js')
+  
