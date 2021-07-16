@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Match Perfeito - Dia Dos Pais</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="results.js"></script>
+</head>
+<body onload="setValues()">
+	<header><img src="img/loja.png" alt=""></header>
+	<main>
+		<h1>
+			Qual sei tipo de
+			#pai<span>pra</span>toda<span>obra </span>
+			você tem?
+		</h1>
+		<img src="img/pai-caseiro.jpg" alt="" class="cover">
+		<p>Existem muitos tipos de pais e <strong>nós temos o presente perfeito</strong> pra cada um deles. Faça nosso teste e descubra qual é tipo do seu pai!</p>
+		<a class="button" href="#pergunta1">FAZER O TESTE</a>
+	</main>
+	<div class="pergunta" id="pergunta1">
+		<h2>Como é o jeitão do seu pai?</h2>
+		<div onclick="saveOption(1,1)">
+			<input type="radio" id="p11" name="pergunta1" value="1">
+			<label for="p11">Ama cuidar do visual</label>
+		</div>
+		<div onclick="saveOption(1,2)">
+			<input type="radio" id="p12" name="pergunta1" value="2">
+			<label for="p12">Ama parques e viagens</label>
+		</div>
+		<div onclick="saveOption(1,3)">
+			<input type="radio" id="p13" name="pergunta1" value="3">
+			<label for="p13">Ama cozinhar</label>
+		</div>
+		<div onclick="saveOption(1,4)">
+			<input type="radio" id="p14" name="pergunta1" value="4">
+			<label for="p14">Ama séries e filmes</label>
+		</div>
+		<div onclick="saveOption(1,5)">
+			<input type="radio" id="p15" name="pergunta1" value="5">
+			<label for="p15">Ama descobrir apps novos</label>
+		</div>
+	</div>
+	<div class="pergunta" id="pergunta2">
+		<h2>O que seu pai costuma fazer no fim de semana?</h2>
+		<div onclick="saveOption(2,1)">
+			<input type="radio" id="p21" name="pergunta1" value="1">
+			<label for="p21">Ir ao shopping</label>
+		</div>
+		<div onclick="saveOption(2,2)">
+			<input type="radio" id="p22" name="pergunta1" value="2">
+			<label for="p22">Curtir o ar livre</label>
+		</div>
+		<div onclick="saveOption(2,3)">
+			<input type="radio" id="p23" name="pergunta1" value="3">
+			<label for="p23">Cozinhar algo gostoso</label>
+		</div>
+		<div onclick="saveOption(2,4)">
+			<input type="radio" id="p24" name="pergunta1" value="4">
+			<label for="p24">Ficar jogado no sofá</label>
+		</div>
+		<div onclick="saveOption(2,5)">
+			<input type="radio" id="p25" name="pergunta1" value="5">
+			<label for="p25">Jogar video game</label>
+		</div>
+	</div>
+	<div class="pergunta" id="pergunta3">
+		<h2>Qual programa de TV ele prefere?</h2>
+		<div onclick="saveOption(3,1)">
+			<input type="radio" id="3,1" name="pergunta1" value="1">
+			<label for="3,1">Esquadrão da Moda</label>
+		</div>
+		<div onclick="saveOption(3,2)">
+			<input type="radio" id="3,2" name="pergunta1" value="2">
+			<label for="3,2">No Limite</label>
+		</div>
+		<div onclick="saveOption(3,3)">
+			<input type="radio" id="3,3" name="pergunta1" value="3">
+			<label for="3,3">MasterChef Brasil</label>
+		</div>
+		<div onclick="saveOption(3,4)">
+			<input type="radio" id="3,4" name="pergunta1" value="4">
+			<label for="3,4">Melhor da Tarde</label>
+		</div>
+		<div onclick="saveOption(3,5)">
+			<input type="radio" id="3,5" name="pergunta1" value="5">
+			<label for="3,5">Zero1</label>
+		</div>
+	</div>
+	<div class="pergunta" id="pergunta4">
+		<h2>Qual tipo de viagem ele gostaria?</h2>
+		<div onclick="saveOption(4,1)">
+			<input type="radio" id="p41" name="pergunta1" value="1">
+			<label for="p41">Hotel luxuoso</label>
+		</div>
+		<div onclick="saveOption(4,2)">
+			<input type="radio" id="p42" name="pergunta1" value="2">
+			<label for="p42">Acampamento</label>
+		</div>
+		<div onclick="saveOption(4,3)">
+			<input type="radio" id="p43" name="pergunta1" value="3">
+			<label for="p43">Vinícola</label>
+		</div>
+		<div onclick="saveOption(4,4)">
+			<input type="radio" id="p44" name="pergunta1" value="4">
+			<label for="p44">Resort</label>
+		</div>
+		<div onclick="saveOption(4,5)">
+			<input type="radio" id="p45" name="pergunta1" value="5">
+			<label for="p45">Castelos na Europa</label>
+		</div>
+	</div>
+	<div class="pergunta" id="pergunta5">
+		<h2>E pra fechar: de quem ele é fã de carteirinha?</h2>
+		<div onclick="saveOption(5,1)">
+			<input type="radio" id="p51" name="pergunta1" value="1">
+			<label for="p51">Alexandre Herchcovitch</label>
+		</div>
+		<div onclick="saveOption(5,2)">
+			<input type="radio" id="p52" name="pergunta1" value="2">
+			<label for="p52">Senna</label>
+		</div>
+		<div onclick="saveOption(5,3)">
+			<input type="radio" id="p53" name="pergunta1" value="3">
+			<label for="p53">Rodrigo Hilbert</label>
+		</div>
+		<div onclick="saveOption(5,4)">
+			<input type="radio" id="p54" name="pergunta1" value="4">
+			<label for="p54">Silvio Santos</label>
+		</div>
+		<div onclick="saveOption(5,5)">
+			<input type="radio" id="p55" name="pergunta1" value="5">
+			<label for="p55">Bill Gates</label>
+		</div>
+	</div>
+</body>
+</html>
