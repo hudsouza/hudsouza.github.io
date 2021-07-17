@@ -3,7 +3,7 @@ function chooseOption() {
 	'Chamar uma estranha de "mãe" uma vez por dia',
 	'Não conseguir respirar pelo nariz',
 	'Só pode ficar parado ou correr a toda velocidade',
-	'Peidar toda vez que beijar alguém',
+	'Espirrar toda vez que beijar alguém',
 	'Mandar mensagem de "SOCORRO" pra sua mãe e sumir por um mês',
 	'Lutar com um avestruz até a morte',
 	'Sempre ter voz de quem inalou gás hélio',
@@ -13,26 +13,20 @@ function chooseOption() {
 	'Divulgar seu contato e endereço pra todos os Telemarketings e não poder bloquear',
 	'Sempre comer alho imediatamente depois de escovar os dentes',
 	'Toda vez que apertar a mão de alguém, tentar forçar por pelo menos 30 segundos',
-	'Responder sempre honestamente quando te perguntarem "tudo bem?"',
+	'Responder sempre honestamente tudo que te perguntarem',
 	'Ter todas as suas doenças tratadas por um médico do século XII',
-	'Perder um dente por ano até ficar sem nada',
+	'Perder um dente por mês até ficar sem nada',
 	'Nunca mais falar com a última pessoa que você mandou mensagem',
 	'Inverter doce e salgado no paladar',
 	'Usar caixa de areia sempre que precisar ir no banheiro',
 	'Hibernar por 4 meses do ano',
 	'Viver sem nunca mais ouvir música',
-	'Sentir que gota de chuva é uma bola de baseball',
+	'Sentir que gota de chuva tem peso de uma bola de tênis',
 	'Eterna sensação de querer espirrar mas não conseguir',
-<<<<<<< HEAD
-<<<<<<< HEAD
 	'Chutar o dedinho do pé na quina sempre que levantar',
 	'Liberar seu histórico de conversas no whatsapp publicamente pra sempre',
-=======
-=======
->>>>>>> parent of f56a815 (update on choices)
-	'Deixar o Roberto Carlos usar sua cara como bola pra cobrar uma falta',
-	'Deixar todo mundo mexer no seu quarto por 10 minutos',
->>>>>>> parent of f56a815 (update on choices)
+	'Chutar o dedinho do pé na quina sempre que levantar',
+	'Liberar seu histórico de conversas no whatsapp publicamente pra sempre',
 	'Morar no 20º andar de um prédio. Mas não tem elevador',
 	'Perder seus dois dedões das mãos',
 	'Ser alérgico a luz direta do sol',
@@ -40,9 +34,9 @@ function chooseOption() {
 	'Sempre ter alguém no telefone quando enquanto você usa o banheiro',
 	'Ter um nariz de invertido (narina pra cima)',
 	'Nunca mais tocar outra pessoa',
-	'Ter braços no lugar das pernas',
+	'Ter braços no lugar das pernas',//AQUI
 	'Só poder tomar banho com temperatura congelante',
-	'Só poder tomar banho com temperatura escaldante'
+	'Só poder tomar banho com temperatura escaldante',
 	'Ter pessoas aleatórias vaiando e cuspindo em você quando sair na rua',
 	'Mergulhar todas as suas comidas num pote de água antes de comer',
 	'Sempre se atrasar 1 hora pra tudo',
@@ -50,18 +44,10 @@ function chooseOption() {
 	'Ter olhos que funcionam normalmente, mas são brancos',
 	'Ser obrigado a roubar de todo potinho de doação e gorjeta',
 	'Só poder andar pra se transportar pra qualquer lugar',
-<<<<<<< HEAD
-<<<<<<< HEAD
 	'Ser alérgico a toda comida e bebida que começa com “C” ou “M”',
 	'Tomar 5 xícaras de espresso a cada refeição',
-=======
-	'Ser alérgico a toda comida que coméca com “C” ou “M”',
+	'Ser alérgico a toda comida que começa com “C” ou “M”',
 	'Tomar 5 xícaras de espresso todo dia às 10h da manhã',
->>>>>>> parent of f56a815 (update on choices)
-=======
-	'Ser alérgico a toda comida que coméca com “C” ou “M”',
-	'Tomar 5 xícaras de espresso todo dia às 10h da manhã',
->>>>>>> parent of f56a815 (update on choices)
 	'Acordar todo dia com um balde de gelo na cara',
 	'Sempre falar de você na terceira pessoa',
 	'Seus olhos só podem funcionar durante a noite',
@@ -74,7 +60,7 @@ function chooseOption() {
 	'Não conseguir falar seu primeiro nome',
 	'Perder todas as fotos que você já tirou',
 	'Comer bola de pelo de um gato',
-	'Só pode ficar parado ou correr a toda velocidade',
+	'Só poder ficar parado ou correr a toda velocidade',
 	'Só comer papinha de bebê sabor legumes',
 	'Sempre falar na língua do P',
 	'Passar todo fim de semana como monitor de buffet infantil sem ser pago',
@@ -83,18 +69,15 @@ function chooseOption() {
 	'Só poder tomar água como bebida (sem café, sem cerveja etc...)',
 	'Não poder falar a menos que esteja respondendo alguém',
 	'Não ter os dois joelhos',
-<<<<<<< HEAD
-	'Fazer um video falando que ainda ama um EX e postar',
-	'Demorar um minuto pra falar ou escrever seu nome',
+	'Fazer um video falando que ainda ama um(a) EX (com nome) e postar',
+	'Demorar 1 minuto pra falar ou escrever seu nome',
 	'Ter filhos e eles serem muito feios',
-=======
 	'Ligar pra quem tirou seu BV e falar que ama a pessoa',
 	'Desenhar um pinto sempre que escrever ou assinar seu nome',
-	'Ter filhos muito feios',
->>>>>>> parent of f56a815 (update on choices)
+	'Ter filhos e eles serem muito feios',
 	'Se sentir sexualmente atraído por animais',
 	'Perder uma semana de vida toda vez que transar',
-	'Fazer um exame de próstata/papanicolau, mas a pessoa do seu lado é o médico',
+	'Beijar a primeira pessoa que vê na rua todo dia',
 	'Convencer todas as pessoas que você conhece que tem câncer e depois de 1 ano falar a verdade',
 	'Por a mão num liquidificador ligado',
 	'Sempre ligar pra mãe do parceiro antes e depois de transar pra avisar',
@@ -109,7 +92,7 @@ function chooseOption() {
 	'Uma pessoa com covid cuspir na cara da sua mãe',
 	'Tomar 5 shots de tequila todo dia antes do café da manhã',
 	'Só pode sentar se estiver sem calça',
-	'Ter uma capinha de celular com formato de pinto',
+	'Não ter celular',
 	'Apertar a bunda de todo mundo que te abraçar',
 	'Sempre fazer metade do xixi na roupa',
 	'Google publicar o seu histórico do navegador e buscas publicamente',
@@ -117,9 +100,9 @@ function chooseOption() {
 	'Vomitar sempre que te chamam',
 	'Fazer xixi nas calças sempre que sentir dor (mais dor, mais xixi)',
 	'Ter que dormir na rua uma vez por semana',
-	'Dormi no melhor colchão do mundo, mas com a sua mãe',
+	'Dormir sempre na mesma cama que sua mãe',
 	'Nunca mais viajar pra fora do seu estado',
-	'Cagar toda vez que peidar',
+	'Só poder usar o banheiro fora de casa',
 	'Lamber a mão de todo mundo que cumprimentar',
 	'Sentir o gosto de tudo pelas mãos',
 	'Só poder usar roupas que já foram usadas por 3 dias',
