@@ -24,9 +24,12 @@ function chooseOption() {
 	'Sentir que gota de chuva é uma bola de baseball',
 	'Eterna sensação de querer espirrar mas não conseguir',
 <<<<<<< HEAD
+<<<<<<< HEAD
 	'Chutar o dedinho do pé na quina sempre que levantar',
 	'Liberar seu histórico de conversas no whatsapp publicamente pra sempre',
 =======
+=======
+>>>>>>> parent of f56a815 (update on choices)
 	'Deixar o Roberto Carlos usar sua cara como bola pra cobrar uma falta',
 	'Deixar todo mundo mexer no seu quarto por 10 minutos',
 >>>>>>> parent of f56a815 (update on choices)
@@ -48,8 +51,13 @@ function chooseOption() {
 	'Ser obrigado a roubar de todo potinho de doação e gorjeta',
 	'Só poder andar pra se transportar pra qualquer lugar',
 <<<<<<< HEAD
+<<<<<<< HEAD
 	'Ser alérgico a toda comida e bebida que começa com “C” ou “M”',
 	'Tomar 5 xícaras de espresso a cada refeição',
+=======
+	'Ser alérgico a toda comida que coméca com “C” ou “M”',
+	'Tomar 5 xícaras de espresso todo dia às 10h da manhã',
+>>>>>>> parent of f56a815 (update on choices)
 =======
 	'Ser alérgico a toda comida que coméca com “C” ou “M”',
 	'Tomar 5 xícaras de espresso todo dia às 10h da manhã',
