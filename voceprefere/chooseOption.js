@@ -23,16 +23,8 @@ function chooseOption() {
 	'Viver sem nunca mais ouvir música',
 	'Sentir que gota de chuva é uma bola de baseball',
 	'Eterna sensação de querer espirrar mas não conseguir',
-<<<<<<< HEAD
-<<<<<<< HEAD
 	'Chutar o dedinho do pé na quina sempre que levantar',
 	'Liberar seu histórico de conversas no whatsapp publicamente pra sempre',
-=======
-=======
->>>>>>> parent of f56a815 (update on choices)
-	'Deixar o Roberto Carlos usar sua cara como bola pra cobrar uma falta',
-	'Deixar todo mundo mexer no seu quarto por 10 minutos',
->>>>>>> parent of f56a815 (update on choices)
 	'Morar no 20º andar de um prédio. Mas não tem elevador',
 	'Perder seus dois dedões das mãos',
 	'Ser alérgico a luz direta do sol',
@@ -42,7 +34,7 @@ function chooseOption() {
 	'Nunca mais tocar outra pessoa',
 	'Ter braços no lugar das pernas',
 	'Só poder tomar banho com temperatura congelante',
-	'Só poder tomar banho com temperatura escaldante'
+	'Só poder tomar banho com temperatura escaldante',
 	'Ter pessoas aleatórias vaiando e cuspindo em você quando sair na rua',
 	'Mergulhar todas as suas comidas num pote de água antes de comer',
 	'Sempre se atrasar 1 hora pra tudo',
@@ -50,18 +42,10 @@ function chooseOption() {
 	'Ter olhos que funcionam normalmente, mas são brancos',
 	'Ser obrigado a roubar de todo potinho de doação e gorjeta',
 	'Só poder andar pra se transportar pra qualquer lugar',
-<<<<<<< HEAD
-<<<<<<< HEAD
 	'Ser alérgico a toda comida e bebida que começa com “C” ou “M”',
 	'Tomar 5 xícaras de espresso a cada refeição',
-=======
 	'Ser alérgico a toda comida que coméca com “C” ou “M”',
 	'Tomar 5 xícaras de espresso todo dia às 10h da manhã',
->>>>>>> parent of f56a815 (update on choices)
-=======
-	'Ser alérgico a toda comida que coméca com “C” ou “M”',
-	'Tomar 5 xícaras de espresso todo dia às 10h da manhã',
->>>>>>> parent of f56a815 (update on choices)
 	'Acordar todo dia com um balde de gelo na cara',
 	'Sempre falar de você na terceira pessoa',
 	'Seus olhos só podem funcionar durante a noite',
@@ -83,15 +67,9 @@ function chooseOption() {
 	'Só poder tomar água como bebida (sem café, sem cerveja etc...)',
 	'Não poder falar a menos que esteja respondendo alguém',
 	'Não ter os dois joelhos',
-<<<<<<< HEAD
 	'Fazer um video falando que ainda ama um EX e postar',
 	'Demorar um minuto pra falar ou escrever seu nome',
 	'Ter filhos e eles serem muito feios',
-=======
-	'Ligar pra quem tirou seu BV e falar que ama a pessoa',
-	'Desenhar um pinto sempre que escrever ou assinar seu nome',
-	'Ter filhos muito feios',
->>>>>>> parent of f56a815 (update on choices)
 	'Se sentir sexualmente atraído por animais',
 	'Perder uma semana de vida toda vez que transar',
 	'Fazer um exame de próstata/papanicolau, mas a pessoa do seu lado é o médico',
