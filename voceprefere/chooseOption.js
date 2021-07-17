@@ -34,7 +34,7 @@ function chooseOption() {
 	'Sempre ter alguém no telefone quando enquanto você usa o banheiro',
 	'Ter um nariz de invertido (narina pra cima)',
 	'Nunca mais tocar outra pessoa',
-	'Ter braços no lugar das pernas',//AQUI
+	'Ter braços no lugar das pernas',
 	'Só poder tomar banho com temperatura congelante',
 	'Só poder tomar banho com temperatura escaldante',
 	'Ter pessoas aleatórias vaiando e cuspindo em você quando sair na rua',
