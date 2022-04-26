@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Qual demanda de Martech você é?</title>
+
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        body {
+            background: #F9F6F4;font-family:'Merriweather', serif; text-align:center; font-size:20px; color: #2F2F2F;
+        }
+
+        form {
+            margin-top: 96px;
+        }
+
+        #display {
+            width: 98%;
+            max-width:660px; padding: 1%; line-height: 2rem; text-align:center; margin: auto; margin-top: 64px;
+        }
+
+        p {
+            margin: 3%;
+        }
+        a {
+            color: #6767ff;
+        }
+        hr {
+            border: none; width: 50%; height: 1px; background: #767676; margin: auto;
+        }
+
+        select {
+            height: 56px;
+            width: 140px;
+            background: none;
+            color: #003d6a;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: inline-block;
+            background: white;
+            width: 160px;
+            height: 56px;
+            border: 1px solid #003d6a;
+            margin: -3px;
+
+        }
+        .wrapper:first-of-type {
+            border-radius: 56px 0 0 56px;
+        }
+        .wrapper:last-of-type {
+            border-radius: 0 56px 56px 0;
+            background: #003d6a;
+            margin-top: -1px
+
+        }
+        h1 {
+            line-height: 56px;
+        }
+
+        input {
+            height: 56px;
+            /* width: 140px; */
+            background: none;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        @media (max-width: 450px) {
+            .wrapper {
+                width:96px;
+                padding: 0 8px;
+            }
+            
+            select {
+                width: initial;
+            }
+
+            .wrapper:first-of-type {
+                width: 40px;
+                padding-left: 16px;
+            }
+
+            .wrapper:last-of-type {
+                width: 124px;
+            }
+        }
+    </style>
+    <script>
+        function showResult() {
+
+            var day = document.getElementById("day").value;
+            var month = document.getElementById("month").value;
+
+            var day_result = new Array ();
+            day_result[1] = "Merchan";
+            day_result[2] = "Banner";
+            day_result[3] = "Alteração de texto";
+            day_result[4] = "LP";
+            day_result[5] = "Dashboard";
+            day_result[6] = "Teste A/B";
+            day_result[7] = "Heatmap";
+            day_result[8] = "GMUD";
+            day_result[9] = "Trackeamento";
+            day_result[10] = "Análise de SEO";
+            day_result[11] = "Merchan";
+            day_result[12] = "Banner";
+            day_result[13] = "Alteração de texto";
+            day_result[14] = "LP";
+            day_result[15] = "Dashboard";
+            day_result[16] = "Teste A/B";
+            day_result[17] = "Heatmap";
+            day_result[18] = "GMUD";
+            day_result[19] = "Trackeamento";
+            day_result[20] = "Análise de SEO";
+            day_result[21] = "Merchan";
+            day_result[22] = "Banner";
+            day_result[23] = "Alteração de texto";
+            day_result[24] = "LP";
+            day_result[25] = "Dashboard";
+            day_result[26] = "Teste A/B";
+            day_result[27] = "Heatmap";
+            day_result[28] = "GMUD";
+            day_result[29] = "Trackeamento";
+            day_result[30] = "Análise de SEO";
+            day_result[31] = "Merchan";
+                
+            var month_result = new Array ();
+            month_result[1] = "Cartão Consignado";
+            month_result[2] = "Cartão de crédito";
+            month_result[3] = "Veículos";
+            month_result[4] = "Maquininha";
+            month_result[5] = "EP FGTS";
+            month_result[6] = "EP Consignado";
+            month_result[7] = "Conta";
+            month_result[8] = "Seguros";
+            month_result[9] = "Saúde PAN";
+            month_result[10] = "EP Clean";
+            month_result[11] = "Open Banking";
+            month_result[12] = "Leilão";
+
+            var final_result = "<div><hr><p>Seu nome Martech é</p><h1>"+day_result[day]+" de "+month_result[month]+"</h1></a><hr></div>";
+
+            document.getElementById('display').innerHTML = final_result;
+        
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+<form>
+    <p>Qual dia do seu aniversário?</p>
+    <!-- <input type="number" id="day"> -->
+    <div class="wrapper">
+    <select id="day" name="day">
+        <option value="1">01</option>
+        <option value="2">02</option>
+        <option value="3">03</option>
+        <option value="4">04</option>
+        <option value="5">05</option>
+        <option value="6">06</option>
+        <option value="7">07</option>
+        <option value="8">08</option>
+        <option value="9">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select>
+    </div>
+
+    <div class="wrapper">
+    <select id="month" name="month">
+        <option value="1">Janeiro</option>
+        <option value="2">Fevereiro</option>
+        <option value="3">Março</option>
+        <option value="4">Abril</option>
+        <option value="5">Maio</option>
+        <option value="6">Junho</option>
+        <option value="7">Julho</option>
+        <option value="8">Agosto</option>
+        <option value="9">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+      </select>
+    </div>
+
+    <div class="wrapper">
+        <input type="button" onclick="showResult()" value="Ver meu nome">
+    </div>
+
+</form>
+
+<div id="display">
+
+</div>
+
+</body>
+</html>
