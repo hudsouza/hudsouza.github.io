@@ -78,5 +78,6 @@ function pickOrder(top){
 		count = 0;
 		document.getElementById('startHead').innerHTML = "Seu Top 5 é:";
 		document.getElementById('startTitle').innerHTML = 'Parabéns!';
+		document.getElementById('repetida').style.display = 'none';
 	}
 };
