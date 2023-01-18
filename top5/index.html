@@ -1,83 +1,56 @@
-function selectItem() {
-	const item = [
-		"Brigadeiro",
-		"Coxinha",
-		"Lasanha",
-		"Macarrão",
-		"Churrasco",
-		"Pastel",
-		"Hamburger",
-		"Salada",
-		"Pão",
-		"Sanduíche",
-		"Bolo",
-		"Torta doce",
-		"Torta salgada",
-		"Arroz",
-		"Feijão",
-		"Pizza",
-		"Cachorro quente",
-		"Purê de batata",
-		"Batata frita",
-		"Fígado",
-		"Frango",
-		"Farofa",
-		"Queijo",
-		"Sorvete",
-		"Beijinho",
-		"Paçoca",
-		"Feijoada",
-		"Brócolis",
-		"Pamonha",
-		"Kibe",
-		"Bolinha de queijo",
-		"Goiabada",
-		"Pudim",
-		"Biscoito de polvilho",
-		"Bolacha recheada",
-		"Pão de queijo",
-		"Sushi",
-		"Pavê",
-		"Sonho",
-		"Panqueca salgada",
-		"Chocolate",
-		"Abóbora",
-		"Abobrinha",
-		"Beterraba",
-		"Berinjela",
-		"Mousse",
-		"Jiló",
-		"Quiabo",
-		"Canjica",
-		"Sopa",
-		"Fruta",
-	]
-	let i = Math.floor(item.length*Math.random());
-	document.getElementById('item').innerHTML = item[i];
-};
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apps do Hudson</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css">
+	<script src="createRank.js"></script>
+	<!-- <script src="myscripts.js"></script> -->
+</head>
+<body onload="selectItem()">
 
-var count = 0;
+	<div>
+		<p id="startTitle">Em qual posição você coloca:</p>
+		<h1 id="startHead"> <span id="item"></span><span>?</span></h1>
+		<hr>
+		<h2>
+			<span class="topic">Top 1:</span>
+			<span id="top1"></span>
+			<button class="btnSmall" id="btn1" onclick="pickOrder(1)">Escolher</button>
+		</h2>
+		<h2>
+			<span class="topic">Top 2:</span>
+			<span id="top2"></span>
+			<button class="btnSmall" id="btn2" onclick="pickOrder(2)">Escolher</button>
+		</h2>
+		<h2>
+			<span class="topic">Top 3:</span>
+			<span id="top3"></span>
+			<button class="btnSmall" id="btn3" onclick="pickOrder(3)">Escolher</button>
+		</h2>
+		<h2>
+			<span class="topic">Top 4:</span>
+			<span id="top4"></span>
+			<button class="btnSmall" id="btn4" onclick="pickOrder(4)">Escolher</button>
+		</h2>
+		<h2>
+			<span class="topic">Top 5:</span>
+			<span id="top5"></span>
+			<button class="btnSmall" id="btn5" onclick="pickOrder(5)">Escolher</button>
+		</h2>
+		<div id="repetida">
+		<hr>
+		<button onclick="selectItem()">Repetida? Clique aqui</button>
+		</div>
+		<hr>
+		<button onclick="location.reload();">Recomeçar</button>
+		<hr>
+	</div>
 
-function pickOrder(top){
-	const picked =  document.getElementById('item').innerHTML;
-	document.getElementById('top'+top).innerHTML = picked;
-	document.getElementById('btn'+top).style.display = 'none';
-	if (count == 0) {
-		count = 1;
-		selectItem();
-	} else if (count == 1) {
-		count = 2;
-		selectItem();
-	} else if (count == 2) {
-		count = 3;
-		selectItem();
-	} else if (count == 3) {
-		count = 4;
-		selectItem();
-	}else if (count == 4) {
-		count = 0;
-		document.getElementById('startHead').innerHTML = "Seu Top 5 é:";
-		document.getElementById('startTitle').innerHTML = 'Parabéns!';
-		document.getElementById('repetida').style.display = 'none';
-	}
-};
+
+</body>
+
+</html>
