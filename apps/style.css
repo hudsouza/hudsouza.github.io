@@ -18,15 +18,23 @@ div {
       margin: 3%;
 }
 a {
-  color: #6767ff;
+    color: white;
+    background: #6767ff;
+    display: block;
+    padding: 12px;
+    margin: 24px 0px;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
 }
 h1 {
+  font-size: 32px;
   line-height: 1.4;
+  text-align: center;
 }
 hr {
   border: none;
-  width: 50%; 
   height: 1px;
   background: #767676;
-  margin: auto;
+  margin: 24px 0px;
 }
