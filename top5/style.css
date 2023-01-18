@@ -34,6 +34,7 @@ h1 {
 h2 {
   font-size: 20px;
   text-align: left;
+  height: 35px;
 }
 span.topic {
   display: inline-block;
