@@ -53,7 +53,19 @@ function selectItem() {
 		"Fruta",
 	]
 	let i = Math.floor(item.length*Math.random());
-	document.getElementById('item').innerHTML = item[i];
+	if 
+		(
+			item[i] == document.getElementById('top1').innerHTML || 
+			item[i] == document.getElementById('top2').innerHTML || 
+			item[i] == document.getElementById('top3').innerHTML ||
+			item[i] == document.getElementById('top4').innerHTML ||
+			item[i] == document.getElementById('top5').innerHTML
+		)
+	{
+		selectItem();
+	} else {
+		document.getElementById('item').innerHTML = item[i];
+	};
 };
 
 var count = 0;
@@ -78,6 +90,5 @@ function pickOrder(top){
 		count = 0;
 		document.getElementById('startHead').innerHTML = "Seu Top 5 é:";
 		document.getElementById('startTitle').innerHTML = 'Parabéns!';
-		document.getElementById('repetida').style.display = 'none';
 	}
 };
