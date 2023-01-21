@@ -8,7 +8,7 @@ body {
 div {
   width: 98%;
   max-width:660px;
-  padding: 8px;
+  padding: 0 8px;
   line-height: 2rem;
   text-align:center;
   margin: 32px auto;
@@ -28,7 +28,7 @@ a {
 }
 h1 {
   font-size: 32px;
-  line-height: 1.4;
+  line-height: 1;
   text-align: center;
 }
 h2 {
