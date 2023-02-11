@@ -19,7 +19,7 @@ hr {border: none; width: 50%; height: 1px; background: #767676; margin: auto;}
 	
 	lugar[0] = "Existem mais olhos ou pernas no mundo?";
 	lugar[1] = "Se pudesse colocar um zero no fim de um nº, qual seria?";
-	lugar[2] = "Se desse pra alterar qualquer coisa em 1% pra gerar caos. O que seria?";
+	lugar[2] = "Se desse pra alterar uma estatistica em 1. O que seria?";
 	lugar[3] = "Um hobby que vc gosta, mas num gosta das pessoas que praticam";
 	lugar[4] = "Conta um fato curioso";
 	lugar[5] = "O que vc acha que é uma habilidade básica que todo mundo devia ter?";
@@ -36,8 +36,10 @@ hr {border: none; width: 50%; height: 1px; background: #767676; margin: auto;}
 	lugar[16] = "Uma coisa que devia ser mais aceita socialmente";
 	lugar[17] = "Falar todos os idiomas ou falar com animais";
 	lugar[18] = "O que vc falaria se todas as pessoas do mundo pudessem ouvir?";
+	lugar[19] = "Um life hack que virou padrão na sua vida";
 
-	var i = Math.floor(19*Math.random())
+ var total = lugar.length;
+	var i = Math.floor(total*Math.random());
 
 	document.write("<div><hr><p>Tema do papo é:</p><h1>"+lugar[i]+"</h1></a><hr></div>");
 </script>
