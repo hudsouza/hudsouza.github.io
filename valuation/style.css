@@ -1,0 +1,50 @@
+body {
+    background: #F9F6F4;
+    font-family:'Merriweather', serif;
+    text-align:center;
+    font-size:20px;
+    color: #2F2F2F;
+}
+main {
+  width: 98%;
+  max-width:600px;
+  padding: 0 8px;
+  line-height: 2rem;
+  text-align:center;
+  margin: 32px auto;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #767676;
+  margin: 24px 0px;
+}
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 16px;
+  width: calc(50% - 45px);
+  font-size: 16px;
+}
+button {
+  width: 100%;
+  margin-top: 24px;
+  border: none;
+  background: #2f2f2f;
+  color: #F9F6F4;
+  font-size: 16px;
+  padding: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -5,14 +5,13 @@ body {
     font-size:20px;
     color: #2F2F2F;
 }
-div {
+main {
   width: 98%;
   max-width:660px;
   padding: 1%;
   line-height: 2rem;
   text-align:center;
-  margin: auto;
-  margin-top: 10%;
+  margin: 0px auto;
 }
 		p {
       margin: 3%;
