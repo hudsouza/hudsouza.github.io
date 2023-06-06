@@ -14,11 +14,14 @@
 	<main>
 		<p id="startTitle">Calcular Valuation:</p>
 		<hr>
-		<div class="data">
-			<input type="number" placeholder="Ask" name="ask" id="ask">
-			<input type="number" placeholder="Percentage" name="percentage" id="percentage">
-		</div>
-		<button onclick="calcValuation()">Calcular</button>
+		<form onsubmit="calcValuation(); return false;">
+			<div class="data">
+				<input type="number" placeholder="Ask" name="ask" id="ask">
+				<input type="number" placeholder="Percentage" name="percentage" id="percentage">
+			</div>
+			<button onclick="calcValuation()">Calcular</button>
+		</form>
+		
 		<hr>
 		<p>A empresa vale:</p>
 		<h1 id="result"></h1>
